@@ -1,8 +1,8 @@
-const example = require('./data/example');
+const featuredproducts = require("./data/featuredproducts");
 
 module.exports = () => {
     return {
-        example,
+        featuredproducts,
     }
 
 }
