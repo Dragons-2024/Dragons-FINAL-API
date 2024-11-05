@@ -23,4 +23,6 @@ const opportunities = [
         "estado": "Completado",
         "valorEstimado": 20000
     }
-];
+]
+
+module.exports = opportunities;
