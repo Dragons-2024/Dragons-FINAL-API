@@ -1,28 +1,45 @@
 const opportunities = [
     {
         "id": 1,
-        "nombre": "Proyecto Desarrollo Web",
-        "descripcion": "Desarrollo de una aplicación web para un oportunidad corporativo.",
-        "fechaCreacion": "2024-01-15T00:00:00.000Z",
-        "estado": "En Progreso",
-        "valorEstimado": 15000
+        "cliente": "Cliente A",
+        "nombreNegocio": "Negocio A",
+        "lineaNegocio": "Outsourcing Recursos",
+        "descripcionOportunidad": "Oportunidad de negocio para la externalización de recursos técnicos.",
+        "valorEstimado": 5000000,
+        "fechaEstimadaRealizacion": "2024-12-15",
+        "estadoOportunidad": "Apertura"
     },
     {
         "id": 2,
-        "nombre": "Consultoría SEO",
-        "descripcion": "Optimización de motores de búsqueda para mejorar el ranking del sitio web.",
-        "fechaCreacion": "2024-02-20T00:00:00.000Z",
-        "estado": "Pendiente",
-        "valorEstimado": 3000
+        "cliente": "Cliente B",
+        "nombreNegocio": "Negocio B",
+        "lineaNegocio": "Desarrollo Web",
+        "descripcionOportunidad": "Proyecto de desarrollo de un sitio web corporativo.",
+        "valorEstimado": 8000000,
+        "fechaEstimadaRealizacion": "2025-01-20",
+        "estadoOportunidad": "Apertura"
     },
     {
         "id": 3,
-        "nombre": "Aplicación Móvil",
-        "descripcion": "Desarrollo de una aplicación móvil multiplataforma.",
-        "fechaCreacion": "2024-03-10T00:00:00.000Z",
-        "estado": "Completado",
-        "valorEstimado": 20000
+        "cliente": "Cliente C",
+        "nombreNegocio": "Negocio C",
+        "lineaNegocio": "Desarrollo Mobile",
+        "descripcionOportunidad": "Desarrollo de una aplicación móvil para comercio electrónico.",
+        "valorEstimado": 12000000,
+        "fechaEstimadaRealizacion": "2025-03-05",
+        "estadoOportunidad": "Apertura"
+    },
+    {
+        "id": 4,
+        "cliente": "Cliente D",
+        "nombreNegocio": "Negocio D",
+        "lineaNegocio": "Consultoría TI",
+        "descripcionOportunidad": "Consultoría para la optimización de infraestructura de TI.",
+        "valorEstimado": 3000000,
+        "fechaEstimadaRealizacion": "2024-11-30",
+        "estadoOportunidad": "Apertura"
     }
 ]
+
 
 module.exports = opportunities;
