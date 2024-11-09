@@ -1,6 +1,5 @@
 const clientes = [
     {
-      "id": 1,
       "nit": "123456789",
       "nombre": "Empresa XYZ S.A.",
       "direccion": "Calle Falsa 123",
@@ -11,7 +10,6 @@ const clientes = [
       "activo": true
     },
     {
-      "id": 2,
       "nit": "987654321",
       "nombre": "Compañía ABC Ltda.",
       "direccion": "Avenida Siempre Viva 742",
@@ -22,7 +20,6 @@ const clientes = [
       "activo": false
     },
     {
-      "id": 3,
       "nit": "112233445",
       "nombre": "Tech Solutions Ltd.",
       "direccion": "Calle Innovación 45",
@@ -33,7 +30,6 @@ const clientes = [
       "activo": true
     },
     {
-      "id": 4,
       "nit": "556677889",
       "nombre": "Global Enterprises S.A.",
       "direccion": "Paseo del Comercio 123",
@@ -44,7 +40,6 @@ const clientes = [
       "activo": true
     },
     {
-      "id": 5,
       "nit": "223344556",
       "nombre": "Distribuciones ABC S.R.L.",
       "direccion": "Calle de la Industria 999",
