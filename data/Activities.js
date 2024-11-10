@@ -8,7 +8,8 @@ const activities= [
         { "name": "Maria" }
       ],
       "ContactUser": "Juan Pérez",
-      "Description": "Seguimiento de actividad comercial"
+      "Description": "Seguimiento de actividad comercial",
+      "nombreNegocio":"Negocio B"
     },
     {
         "id": 2,
@@ -19,8 +20,10 @@ const activities= [
           { "name": "Carlos" }
         ],
         "ContactUser": "Laura Gómez",
-        "Description": "Envío de propuesta comercial"
-      },{
+        "Description": "Envío de propuesta comercial",
+        "nombreNegocio":"Negocio A"
+      },
+      {
         "id": 3,
         "ContactType": "Reunión Presencial",
         "ContactDate": "2024-11-05",
@@ -29,7 +32,8 @@ const activities= [
           { "name": "Sofía" }
         ],
         "ContactUser": "Luis Torres",
-        "Description": "Presentación de producto"
+        "Description": "Presentación de producto",
+        "nombreNegocio":"Negocio A"
       },
       {
         "id": 4,
@@ -43,7 +47,8 @@ const activities= [
           {"name":"Julio"}
         ],
         "ContactUser": "Carlos Ruiz",
-        "Description": "Demostración de características"
+        "Description": "Demostración de características",
+        "nombreNegocio":"Negocio C"
       }
       
       
