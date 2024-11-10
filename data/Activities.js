@@ -9,7 +9,7 @@ const activities= [
       ],
       "ContactUser": "Juan Pérez",
       "Description": "Seguimiento de actividad comercial",
-      "nombreNegocio":"Negocio B"
+      "BusinessName":"Negocio B"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@ const activities= [
         ],
         "ContactUser": "Laura Gómez",
         "Description": "Envío de propuesta comercial",
-        "nombreNegocio":"Negocio A"
+        "BusinessName":"Negocio A"
       },
       {
         "id": 3,
@@ -33,7 +33,7 @@ const activities= [
         ],
         "ContactUser": "Luis Torres",
         "Description": "Presentación de producto",
-        "nombreNegocio":"Negocio A"
+        "BusinessName":"Negocio A"
       },
       {
         "id": 4,
@@ -48,7 +48,7 @@ const activities= [
         ],
         "ContactUser": "Carlos Ruiz",
         "Description": "Demostración de características",
-        "nombreNegocio":"Negocio C"
+        "BusinessName":"Negocio C"
       }
       
       
