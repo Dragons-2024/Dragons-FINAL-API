@@ -29,12 +29,14 @@ server.put("/clientes/:nit", (req, res) => {
 server.patch("/clientes/actualizar/:nit", (req, res) => {
   const id = req.params.nit;
   const clientes = router.db.get("clientes");
+  
+  console.log( req.body);
 
-  const cliente = clientes.findIndex((cliente) => cliente.nit === id);
+  const clienteIndex = clientes.findIndex((cliente) => cliente.nit === id);
 
-  if (cliente !== -1) {
-    const updatedCliente = { ...clientes[cliente], ...req.body };
-    clientes[cliente] = updatedCliente;
+  if (clienteIndex !== -1) {
+    const updatedCliente = { ...clientes[clienteIndex], ...req.body };
+    clientes[clienteIndex] = updatedCliente;
     router.db.write(); 
     res.jsonp(updatedCliente);
   } else {
