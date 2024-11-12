@@ -25,6 +25,17 @@ server.put("/clientes/:nit", (req, res) => {
   }
 });
 
+server.put("/clientes/:id", (req, res) => {
+  const id = req.params.id;
+  const clienteIndex = db.clientes.findIndex((cliente) => cliente.id == id);
+  
+  if (clienteIndex !== -1) {
+    db.clientes[clienteIndex] = { ...db.clientes[clienteIndex], ...req.body };
+    res.jsonp(db.clientes[clienteIndex]);
+  } else {
+    res.sendStatus(404);
+  }
+});
 
 server.use(router);
 
