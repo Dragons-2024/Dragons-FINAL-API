@@ -26,15 +26,15 @@ server.put("/clientes/:nit", (req, res) => {
   }
 });
 
-server.patch("/clientes/actualizar/:id", (req, res) => {
-  const id = parseInt(req.params.id, 10);
+server.patch("/clientes/actualizar/:nit", (req, res) => {
+  const id = req.params.nit;
   const clientes = router.db.get("clientes");
 
-  const clienteIndex = clientes.findIndex((cliente) => cliente.id === id);
+  const cliente = clientes.findIndex((cliente) => cliente.nit === id);
 
-  if (clienteIndex !== -1) {
-    const updatedCliente = { ...clientes[clienteIndex], ...req.body };
-    clientes[clienteIndex] = updatedCliente;
+  if (cliente !== -1) {
+    const updatedCliente = { ...clientes[cliente], ...req.body };
+    clientes[cliente] = updatedCliente;
     router.db.write(); 
     res.jsonp(updatedCliente);
   } else {
