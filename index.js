@@ -7,6 +7,7 @@ const db = require("./db.js")();
 const router = jsonServer.router(db);
 
 server.use(middlewares);
+server.use(jsonServer.bodyParser);
 
 server.get("/clientes", (req, res) => {
 
@@ -25,13 +26,17 @@ server.put("/clientes/:nit", (req, res) => {
   }
 });
 
-server.put("/clientes/actualizar:id", (req, res) => {
-  const id = req.params.id;
-  const clienteIndex = db.clientes.findIndex((cliente) => cliente.id == id);
-  
+server.put("/clientes/actualizar/:id", (req, res) => {
+  const id = parseInt(req.params.id, 10);
+  const clientes = router.db.get("clientes");
+
+  const clienteIndex = clientes.findIndex((cliente) => cliente.id === id);
+
   if (clienteIndex !== -1) {
-    db.clientes[clienteIndex] = { ...db.clientes[clienteIndex], ...req.body };
-    res.jsonp(db.clientes[clienteIndex]);
+    const updatedCliente = { ...clientes[clienteIndex], ...req.body };
+    clientes[clienteIndex] = updatedCliente;
+    router.db.write(); 
+    res.jsonp(updatedCliente);
   } else {
     res.sendStatus(404);
   }
