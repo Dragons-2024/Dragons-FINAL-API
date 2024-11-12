@@ -26,7 +26,7 @@ server.put("/clientes/:nit", (req, res) => {
   }
 });
 
-server.put("/clientes/actualizar/:id", (req, res) => {
+server.patch("/clientes/actualizar/:id", (req, res) => {
   const id = parseInt(req.params.id, 10);
   const clientes = router.db.get("clientes");
 
