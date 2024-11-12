@@ -25,7 +25,7 @@ server.put("/clientes/:nit", (req, res) => {
   }
 });
 
-server.put("/clientes/:id", (req, res) => {
+server.put("/clientes/actualizar:id", (req, res) => {
   const id = req.params.id;
   const clienteIndex = db.clientes.findIndex((cliente) => cliente.id == id);
   
