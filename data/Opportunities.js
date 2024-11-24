@@ -37,7 +37,7 @@ const opportunities = [
         "descripcionOportunidad": "Consultoría para la optimización de infraestructura de TI.",
         "valorEstimado": 3000000,
         "fechaEstimadaRealizacion": "2024-11-30",
-        "estadoOportunidad": "Apertura"
+        "estadoOportunidad": "Apertura",
     }
 ]
 

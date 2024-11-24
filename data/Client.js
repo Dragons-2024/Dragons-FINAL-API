@@ -7,7 +7,21 @@ const clientes = [
       "pais": "Falsolandia",
       "telefono": "123-456-7890",
       "correoCorporativo": "contacto@empresaxyz.com",
-      "activo": true
+      "activo": true,
+      "contactos":[
+        {
+          "nombre": "Juan",
+          "apellido": "Pérez",
+          "correo": "juan.perez@example.com",
+          "telefono": "1234567890"
+        },
+        {
+          "nombre": "María",
+          "apellido": "Gómez",
+          "correo": "maria.gomez@example.com",
+          "telefono": "0987654321"
+        }
+      ]
     },
     {
       "nit": "987654321",
@@ -17,7 +31,21 @@ const clientes = [
       "pais": "EE.UU.",
       "telefono": "098-765-4321",
       "correoCorporativo": "info@companiaabc.com",
-      "activo": false
+      "activo": false,
+      "contactos":[
+        {
+          "nombre": "Juan",
+          "apellido": "Pérez",
+          "correo": "juan.perez@example.com",
+          "telefono": "1234567890"
+        },
+        {
+          "nombre": "Carlos",
+          "apellido": "Rodríguez",
+          "correo": "carlos.rodriguez@example.com",
+          "telefono": "1122334455"
+        }
+      ]
     },
     {
       "nit": "112233445",
@@ -27,7 +55,33 @@ const clientes = [
       "pais": "Innovalandia",
       "telefono": "555-123-4567",
       "correoCorporativo": "contacto@techsolutions.com",
-      "activo": true
+      "activo": true,
+      "contactos":[
+        {
+          "nombre": "Juan",
+          "apellido": "Pérez",
+          "correo": "juan.perez@example.com",
+          "telefono": "1234567890"
+        },
+        {
+          "nombre": "Carlos",
+          "apellido": "Rodríguez",
+          "correo": "carlos.rodriguez@example.com",
+          "telefono": "1122334455"
+        },
+        {
+          "nombre": "Ana",
+          "apellido": "Martínez",
+          "correo": "ana.martinez@example.com",
+          "telefono": "5566778899"
+        },
+        {
+          "nombre": "Luis",
+          "apellido": "Fernández",
+          "correo": "luis.fernandez@example.com",
+          "telefono": "6677889900"
+        }
+      ]
     },
     {
       "nit": "556677889",
@@ -47,7 +101,27 @@ const clientes = [
       "pais": "Industriolandia",
       "telefono": "222-333-4444",
       "correoCorporativo": "ventas@distribucionesabc.com",
-      "activo": false
+      "activo": false,
+      "contactos":[
+        {
+          "nombre": "Juan",
+          "apellido": "Pérez",
+          "correo": "juan.perez@example.com",
+          "telefono": "1234567890"
+        },
+        {
+          "nombre": "Ana",
+          "apellido": "Martínez",
+          "correo": "ana.martinez@example.com",
+          "telefono": "5566778899"
+        },
+        {
+          "nombre": "Luis",
+          "apellido": "Fernández",
+          "correo": "luis.fernandez@example.com",
+          "telefono": "6677889900"
+        }
+      ]
     }
   ];
   

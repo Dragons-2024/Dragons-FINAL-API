@@ -48,7 +48,7 @@ const activities= [
         ],
         "ContactUser": "Carlos Ruiz",
         "Description": "Demostración de características",
-        "BusinessName":"Negocio C"
+        "BusinessName":"Negocio D"
       }
       
       
