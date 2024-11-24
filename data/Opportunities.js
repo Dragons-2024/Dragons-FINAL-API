@@ -31,7 +31,7 @@ const opportunities = [
     },
     {
         "id": 4,
-        "cliente": "Global Enterprises S.A.",
+        "cliente": "Distribuciones ABC S.R.L.",
         "nombreNegocio": "Negocio D",
         "lineaNegocio": "Consultoría TI",
         "descripcionOportunidad": "Consultoría para la optimización de infraestructura de TI.",
